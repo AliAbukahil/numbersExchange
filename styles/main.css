@@ -30,4 +30,28 @@ h3 {
   color: #221e1e;
 }
 
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form input {
+  padding: 0.6rem;
+  width: 15%;
+  border: none;
+  color: black;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+form button {
+  margin-top: 3rem;
+  border: none;
+  padding: 1rem 5rem;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+}
+
 /*# sourceMappingURL=main.css.map */
