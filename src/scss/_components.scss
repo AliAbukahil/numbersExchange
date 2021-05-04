@@ -4,3 +4,28 @@ h3 {
   margin-top: 8rem;
   color: rgb(34, 30, 30);
 }
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  input {
+    padding: 0.6rem;
+    width: 15%;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    border-radius: 5rem;
+  }
+  button {
+    margin-top: 3rem;
+    border: none;
+    padding: 1rem 5rem;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+  }
+}
