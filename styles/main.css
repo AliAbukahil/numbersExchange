@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /*with this now 10px = 1rem */
+  /* note that we could have used ems instead of rems but that is a whole lot of work, because it is difficult to make, because the ems depend not on the root font size but on the font size of the parent Element and with that you have to do a lot of calculations and it becomes really difficult to mange.  */
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Girassol", cursive;
+  background: #6190e8;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #a7bfe8, #6190e8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #a7bfe8, #6190e8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h3 {
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 8rem;
+  color: #e65949;
+}
+
+/*# sourceMappingURL=main.css.map */
