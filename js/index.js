@@ -39,7 +39,7 @@ checkNow.addEventListener("click", weekend);
 
 /// before after function
 slider.oninput = () => {
-  let sliderVal = slider.value;
-  drag.style.left = sliderVal + "%";
-  img.style.width = sliderVal + "%";
+  let monkey = slider.value;
+  drag.style.left = monkey + "%";
+  img.style.width = monkey + "%";
 };
