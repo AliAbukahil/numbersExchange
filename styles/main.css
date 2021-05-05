@@ -63,4 +63,81 @@ form button {
   font-size: 3rem;
 }
 
+hr {
+  background-color: black;
+  padding: 0.1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.contianer {
+  height: 50rem;
+  width: auto;
+  background: white;
+  position: relative;
+  box-shadow: 0 10px 10px rgba(66, 66, 66, 0.15);
+  border: 1rem solid #8686f1;
+  overflow: hidden;
+}
+.contianer .contianer__images {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.contianer .contianer__images--img-1 {
+  height: 100%;
+  width: 100%;
+  background: url("../img/nat-6.jpg") no-repeat center center fixed;
+}
+.contianer .contianer__images--img-2 {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background: url("../img/nat-7.jpg") no-repeat center center fixed;
+}
+.contianer .slider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.contianer .slider input {
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  background: none;
+}
+.contianer .slider input::-webkit-slider-thumb {
+  height: 48rem;
+  width: 0.3rem;
+  background: none;
+  -webkit-appearance: none;
+}
+
+.slider__drag {
+  height: 48rem;
+  width: 0.3rem;
+  position: absolute;
+  left: 49.85%;
+  pointer-events: none;
+}
+.slider__drag::before,
+.slider__drag ::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 48rem;
+  background: whitesmoke;
+}
+.slider__drag span {
+  height: 2rem;
+  width: 1rem;
+  border: 3px solid whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*# sourceMappingURL=main.css.map */
