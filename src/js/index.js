@@ -1,10 +1,17 @@
-// Variables
+// Days Counter Variables
 const year = new Date().getFullYear();
 document.querySelector(".year").innerHTML = year;
 
 const date = new Date();
 const checkNow = document.querySelector("#check-now");
 document.querySelector("#title").innerHTML = "Days Counter";
+
+////////// before after Variables
+const slider = document.querySelector(".slider input");
+const img = document.querySelector(
+  ".contianer__images .contianer__images--img-2"
+);
+const drag = document.querySelector(".slider .slider__drag");
 
 const getDayName = () => {
   return date.toLocaleDateString("en-EN", {
@@ -29,3 +36,10 @@ function weekend(e) {
   }
 }
 checkNow.addEventListener("click", weekend);
+
+/// before after function
+slider.oninput = () => {
+  let sliderVal = slider.value;
+  drag.style.left = sliderVal + "%";
+  img.style.width = sliderVal + "%";
+};

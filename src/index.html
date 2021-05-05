@@ -15,7 +15,7 @@
   <body>
     <main>
       <!-- days counter  -->
-      <section class="weekend-counter">
+      <section class="days-counter">
         <h3 id="title"></h3>
         <form action="">
           <input type="text" id="user-name" placeholder="type your name" />
@@ -23,17 +23,31 @@
         </form>
         <div class="result"></div>
       </section>
+      <!--       <hr /> -->
 
+      <!-- After Before images -->
+      <div class="contianer flex">
+        <div class="contianer__images">
+          <div class="contianer__images--img-1"></div>
+          <div class="contianer__images--img-2"></div>
+        </div>
+        <div class="slider">
+          <div class="slider__drag">
+            <span></span>
+          </div>
+          <input type="range" min="0" max="100" value="50" name="" id="woo" />
+        </div>
+      </div>
       <!-- some training on event bullling -->
-      <ul id="todo-list"></ul>
+<!--       <ul id="todo-list"></ul>
       <h2 class="todo-nr">Number of items:</h2>
 
       <button id="main-title">My Website</button>
-    </main>
+    </main> -->
 
     <!-- Footer -->
     <footer>
-      <div>Copyright ® <span class="year"></span></div>
+      <div class="copyright">Copyright ® <span class="year"></span></div>
     </footer>
 
     <script src="./js/index.js"></script>
