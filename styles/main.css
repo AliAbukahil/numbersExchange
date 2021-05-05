@@ -54,4 +54,13 @@ form button {
   border-radius: 5rem;
 }
 
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  font-size: 3rem;
+}
+
 /*# sourceMappingURL=main.css.map */
